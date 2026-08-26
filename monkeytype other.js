@@ -12,7 +12,7 @@
     'use strict';
 
     var isExpanded = false;
-    var isMenuVisible = false;
+    var isMenuVisible = true;
     var isToggled = false;
     var Index = 0;
     var typeWord = "";
@@ -267,7 +267,7 @@
                 settings.style.display = 'none';
                 menu.style.height = '50px';
             } else {
-                showMenu();
+                hideMenu();
             }
             return;
         }
