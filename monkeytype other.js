@@ -267,7 +267,7 @@
                 settings.style.display = 'none';
                 menu.style.height = '50px';
             } else {
-                hideMenu();
+                showMenu();
             }
             return;
         }
