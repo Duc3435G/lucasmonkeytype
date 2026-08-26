@@ -12,7 +12,7 @@
     'use strict';
 
     var isExpanded = false;
-    var isMenuVisible = true;
+    var isMenuVisible = false;
     var isToggled = false;
     var Index = 0;
     var typeWord = "";
@@ -257,7 +257,7 @@
     document.addEventListener('mouseup', function() { isDragging = false; });
 
     document.addEventListener('keydown', function(e) {
-        if (e.key === '/') {
+        if (e.key === 'F8') {
             e.preventDefault();
             isMenuVisible = !isMenuVisible;
             if (isMenuVisible) {
@@ -267,7 +267,7 @@
                 settings.style.display = 'none';
                 menu.style.height = '50px';
             } else {
-                showMenu();
+                hideMenu();
             }
             return;
         }
